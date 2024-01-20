@@ -70,4 +70,32 @@ while (i * i < t){
 print('Largest Prime factor is: ')
 t
 
+#Random normal distribution chart
+
+nor <- rnorm(10000, mean = 0, sd = .1)
+
+hist(nor)
+
+#Random Poisson distribution chart
+
+
+p <- rpois(10000,5)
+
+hist(p)
+
+
+#Random binomial distribution chart
+
+j <- seq(0,500,by = 1)
+
+k <- dbinom(x,500,0.5)
+
+
+plot(j,k)
+
+#Random normal distribution chart mean 250
+
+nr5 <- rnorm(500, mean = 250, sd = 10)
+
+hist(nr5)
 
